@@ -4,7 +4,8 @@
   "description": "A small utility for JSON (parse and stringify) that follows error first approach inspired from rust.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
 }
