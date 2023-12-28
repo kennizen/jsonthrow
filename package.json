@@ -1,0 +1,16 @@
+{
+  "name": "jsonthrow",
+  "version": "1.0.0",
+  "description": "A small utility for JSON (parse and stringify) that follows error first approach inspired from rust.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "personal:kennizen/jsonthrow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
