@@ -1,12 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.jsonthrow = void 0;
-const result_1 = require("./hof/result");
 function stringify(...args) {
-    return (0, result_1.result)(JSON.stringify, ...args);
+    try {
+        const res = JSON.stringify(...args);
+        return [res, null];
+    }
+    catch (error) {
+        return [null, error];
+    }
 }
 function parse(...args) {
-    return (0, result_1.result)(JSON.parse, ...args);
+    try {
+        const res = JSON.parse(...args);
+        return [res, null];
+    }
+    catch (error) {
+        return [null, error];
+    }
 }
 exports.jsonthrow = {
     stringify,

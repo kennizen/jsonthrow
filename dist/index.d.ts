@@ -1,8 +1,8 @@
-import { Result } from "./hof/result";
+type Result<T extends unknown, E extends Error> = [T, null] | [null, E];
 declare function stringify(...args: Parameters<JSON["stringify"]>): Result<string, Error>;
 declare function parse<T extends unknown>(...args: Parameters<JSON["parse"]>): Result<T, Error>;
 export declare const jsonthrow: {
-    stringify: typeof stringify;
-    parse: typeof parse;
+    readonly stringify: typeof stringify;
+    readonly parse: typeof parse;
 };
 export {};

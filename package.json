@@ -5,10 +5,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest",
     "watch": "npx tsc --watch"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/kennizen/jsonthrow"
@@ -24,7 +22,7 @@
     "results"
   ],
   "author": "Prachurjya Gogoi",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.5",
     "typescript": "^5.3.3"
