@@ -1,8 +1,6 @@
 type Result<T extends unknown, E extends Error> = [T, null] | [null, E];
 
-function stringify(
-  ...args: Parameters<JSON["stringify"]>
-): Result<string, Error> {
+function stringify(...args: Parameters<JSON["stringify"]>): Result<string, Error> {
   try {
     const res = JSON.stringify(...args);
     return [res, null];
@@ -11,9 +9,7 @@ function stringify(
   }
 }
 
-function parse<T extends unknown>(
-  ...args: Parameters<JSON["parse"]>
-): Result<T, Error> {
+function parse<T extends unknown>(...args: Parameters<JSON["parse"]>): Result<T, Error> {
   try {
     const res = JSON.parse(...args);
     return [res, null];

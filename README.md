@@ -32,17 +32,15 @@ function test() {
   // since we checked for error result is string at this point
   console.log(result);
 
-  const [result2, error2] = jsonthrow.parse(result);
+  const [result2, error2] = jsonthrow.parse<typeof data>(result);
 
   if (error2) {
     // do something
     return;
   }
 
-  console.log(result2);
+  console.log(result2); // will be of type data
 }
-
-test();
 ```
 
 Example in a .js file
@@ -77,6 +75,4 @@ function test() {
 
   console.log(result2);
 }
-
-test();
 ```

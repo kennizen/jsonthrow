@@ -1,6 +1,6 @@
 {
   "name": "jsonthrow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small utility for JSON (parse and stringify) that follows error first approach inspired from rust.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
